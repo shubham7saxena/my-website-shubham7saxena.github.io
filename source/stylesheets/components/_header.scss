@@ -1,0 +1,33 @@
+main {
+    max-width: 48rem;
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+}
+
+.site-header {
+    .site-title {
+        font-weight: 700;
+        > a {
+            color: $text-color;
+            text-decoration: none;
+            &:hover {
+                border-bottom: 1px $color-black dashed;
+            }
+        }
+    }
+    .site-nav {
+        > a {
+            color: $text-color;
+            &:hover {
+                text-decoration: none;
+                border-bottom: 1px $color-black dashed;
+            }
+            &.active {
+                border-bottom: 2px solid #666;
+            }
+            + a {
+                margin-left: 1rem;
+            }
+        }
+    }
+}
