@@ -16,6 +16,8 @@ page '/*.txt', layout: false
 # hot reloading of the page on code change
 activate :livereload
 
+# pretty URL's
+activate :directory_indexes
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
